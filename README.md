@@ -5,6 +5,7 @@ Throughout this guide we will guide you through every step needed to make sure y
 #### 1. Installation
 This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX(R) script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
 >If the script runs smoothly you should get approximately this output: 
+>
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-11-om-20.18.46.png)](https://www.linkpicture.com/view.php?img=LPic609acab117635650192931)
 
 To make sure the SNP\_impact\_FoldX.run script works within your terminal, you run the following command in your BASH or ZSH terminal shell: `chmod +xrw SNP_impact_FoldX.run`.
@@ -37,6 +38,7 @@ To format the .txt file your list all mutations separated by “;” and tabs th
 
 => Example: mutating glycine (G) at position 476 in subunit D to alanine (A) = GD476A
 >Than your individual file should look like: 
+>
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.35.02.png)](https://www.linkpicture.com/view.php?img=LPic609b935ac0511954613393)
 
 If you want to insert 2 or more mutations in one PDB file you list them in the format: 
@@ -44,12 +46,14 @@ If you want to insert 2 or more mutations in one PDB file you list them in the f
 
 => Example: GD476A, GA321P;
 >Than your individual file should look like: 
+>
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
 
 Since this a high throughput manner, you'll probably want to test more than one mutation. Here you just add the other mutations in the same format on the line below.
 
 => Example: You want to test GD476A and GA321P seperately.
 >Than your individual file should look like: 
+>
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
 
 NOTE: All your mutations need to be present in the PDB file in able for it to work. So, if an error occurs check which mutation was processed last and check whether this amino acid is present in your PDB file. If this is the case please make sure to read the previous note on the amount of individual files.
@@ -90,11 +94,11 @@ NOTE: that you should provide the lines, since when you choose to insert 2 mutat
 => Example:
 1. For this individual list:
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
-
+>
 >You answer this question with 1.
 2. On the otherhand, when you have this individual list:
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
-
+>
 >You answer the question with 2, since there are now two lines.
 
 The next question will only appear when you want to run a BuildModel analysis: `Do you want to perform a Dihedral analysis? (Yes/No)`

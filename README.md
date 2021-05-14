@@ -4,7 +4,8 @@ Throughout this guide we will guide you through every step needed to make sure y
 
 #### 1. Installation
 This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX(R) script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
->If the script runs smoothly you should get approximately this output: [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-11-om-20.18.46.png)](https://www.linkpicture.com/view.php?img=LPic609acab117635650192931)
+>If the script runs smoothly you should get approximately this output: 
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-11-om-20.18.46.png)](https://www.linkpicture.com/view.php?img=LPic609acab117635650192931)
 
 To make sure the SNP\_impact\_FoldX.run script works within your terminal, you run the following command in your BASH or ZSH terminal shell: `chmod +xrw SNP_impact_FoldX.run`.
 #### 2. Content script
@@ -89,9 +90,11 @@ NOTE: that you should provide the lines, since when you choose to insert 2 mutat
 => Example:
 1. For this individual list:
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
+
 >You answer this question with 1.
 2. On the otherhand, when you have this individual list:
 >[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
+
 >You answer the question with 2, since there are now two lines.
 
 The next question will only appear when you want to run a BuildModel analysis: `Do you want to perform a Dihedral analysis? (Yes/No)`

@@ -1,6 +1,6 @@
 The SNP\_impact\_FoldX.run script is a user-friendly on the command line tool that will help you run FoldX analyses in a high throughput manner to estimate the impact of a SNP on a protein structure.  
 
-Throughout this guide we will guide you through every step needed to make sure your analyses run smoothly. ==Make sure to read everything before you start.==
+Throughout this guide we will guide you through every step needed to make sure your analyses run smoothly. **Make sure to read everything before you start.**
 
 #### 1. Installation
 This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX(R) script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
@@ -10,7 +10,7 @@ To make sure the SNP\_impact\_FoldX.run script works within your terminal, you r
 #### 2. Content script
 To estimate the SNP impact on a protein structure, the script gives output of three different main FoldX analyses: (1) [BuildModel](http://foldxsuite.crg.eu/command/BuildModel) (2) [Dihedral](http://foldxsuite.crg.eu/command/Dihedrals) (3) [Positionscan](http://foldxsuite.crg.eu/command/PositionScan).
 ###### 2.1. Why perform a Buildmodel analysis?
-While performing a [BuildModel](http://foldxsuite.crg.eu/command/BuildModel) analysis, you will be able to insert different mutations into an already existing PDB[^PDBfile] file. By inserting these, the FoldX5(r) program will be able to calculate the difference in Gibbs free energy (∆G). The ∆G will determine the stability of the mutated protein. If ∆G > 0, the mutation is destabilizing, while a mutation causing a ∆G \< 0 the mutation will be stabilizing. Though, this does not tell you what the effect is on the proteins working mechanism itself, it will tell you more about the impact on the eventual protein structure in terms of its absolute value. The bigger the absolute value of ∆G, the bigger the overall impact on the structure.
+While performing a [BuildModel](http://foldxsuite.crg.eu/command/BuildModel) analysis, you will be able to insert different mutations into an already existing PDB file (= a file mainly provided by the [protein data base](https://www.rcsb.org) that gives a visual 3D representation of a protein). By inserting these, the FoldX5(r) program will be able to calculate the difference in Gibbs free energy (∆G). The ∆G will determine the stability of the mutated protein. If ∆G > 0, the mutation is destabilizing, while a mutation causing a ∆G \< 0 the mutation will be stabilizing. Though, this does not tell you what the effect is on the proteins working mechanism itself, it will tell you more about the impact on the eventual protein structure in terms of its absolute value. The bigger the absolute value of ∆G, the bigger the overall impact on the structure.
 ###### 2.2. Why perform a Dihedral analysis?
 The [Dihedral](http://foldxsuite.crg.eu/command/Dihedrals) analysis will provide all the angles between the amino acids. Here we chose to use the [Optimize](http://foldxsuite.crg.eu/command/Optimize) command, what optimizes the angles within the PDB files to provide a structure with the least VanDer Waal force clashes. Though, the script will provide Dihedral analyses output of both files (from the non-optimized and the optimized PDB files). 
 By comparing the difference in angles between the mutated and the unmutated PDB files, you'll be able to see the extent of the impact of your mutation on the other amino acids.
@@ -89,10 +89,10 @@ NOTE: that you should provide the lines, since when you choose to insert 2 mutat
 => Example:
 1. For this individual list:
 [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
-You answer this question with 1.
+  You answer this question with 1.
 2. On the otherhand, when you have this individual list:
 [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
-You answer the question with 2, since there are now two lines.
+  You answer the question with 2, since there are now two lines.
 
 The next question will only appear when you want to run a BuildModel analysis: `Do you want to perform a Dihedral analysis? (Yes/No)`
 Your answer can either be 'Yes' or 'No'. Make sure to use the capital, since the answers are case sensitive.
@@ -103,7 +103,9 @@ Like the yes-no questions, your answer can either be 'Yes' or 'No'. Make sure to
 The last and final question will appear if you chose to run a position scan: `which positions do you want to test? (Positions in format separated by a space)`
 Here you answer with 1 or more mutations formatted like discussed in 3.5.. Make sure to put a space between mutations if you want to scan multiple locations.
 
-From this point on your script will run all by itself, depending on the analyses you want to run and you have to repair your PDB file, this can take a lot of time.
+From this point on your script will run all by itself, depending on the analyses you want to run and you have to repair your 
+
+file, this can take a lot of time.
 
 #### 5. Output
 After the full script has finished, you should find 4 new maps in your directory (if you ran every analysis): **BuildModel.** (=BuildModel output), **DH.** (=Dihedral output), **PS** (=PositionScan output) and **Molecules.** (= contains all PDB files used and made throughout the analyses). However, if there was output from another run present in your directory, files called **previous_run** will contain the old date to ensure no data gets lost throughout the analysis.
@@ -124,5 +126,3 @@ In the last map, Molecules., you find every PDB file made and used by the script
 
 #### 6. Licenses
 This script is produced to function as a tool to run FoldX(R) in a user-friendly and high-throughput manner and was produced with an academic FoldX(R) license.
-
-[^PDBfile]: **_PDB file_** = a file mainly provided by the [protein data base](https://www.rcsb.org) that gives a visual 3D representation of a protein.

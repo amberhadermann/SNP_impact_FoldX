@@ -36,20 +36,20 @@ To format the .txt file your list all mutations separated by “;” and tabs th
 
 => Example: mutating glycine (G) at position 476 in subunit D to alanine (A) = GD476A
 >Than your individual file should look like: 
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.35.02.png)](https://www.linkpicture.com/view.php?img=LPic609b935ac0511954613393)
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.35.02.png)](https://www.linkpicture.com/view.php?img=LPic609b935ac0511954613393)
 
 If you want to insert 2 or more mutations in one PDB file you list them in the format: 
 >mutation1, mutation2; 	
 
 => Example: GD476A, GA321P;
 >Than your individual file should look like: 
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
 
 Since this a high throughput manner, you'll probably want to test more than one mutation. Here you just add the other mutations in the same format on the line below.
 
 => Example: You want to test GD476A and GA321P seperately.
 >Than your individual file should look like: 
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
 
 NOTE: All your mutations need to be present in the PDB file in able for it to work. So, if an error occurs check which mutation was processed last and check whether this amino acid is present in your PDB file. If this is the case please make sure to read the previous note on the amount of individual files.
 
@@ -88,11 +88,11 @@ Here you provide the amount of lines in your individual file.
 NOTE: that you should provide the lines, since when you choose to insert 2 mutations at a time it will count as 1 mutation in the script.
 => Example:
 1. For this individual list:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
-  You answer this question with 1.
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
+>You answer this question with 1.
 2. On the otherhand, when you have this individual list:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
-  You answer the question with 2, since there are now two lines.
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
+>You answer the question with 2, since there are now two lines.
 
 The next question will only appear when you want to run a BuildModel analysis: `Do you want to perform a Dihedral analysis? (Yes/No)`
 Your answer can either be 'Yes' or 'No'. Make sure to use the capital, since the answers are case sensitive.

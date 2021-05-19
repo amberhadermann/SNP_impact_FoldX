@@ -4,7 +4,7 @@ Throughout this guide we will guide you through every step needed to make sure y
 
 #### 1. Installation
 
-This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX(R) script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
+This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX® script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
 
 >Once the script initiates, you should see this output:
 >
@@ -20,7 +20,7 @@ To estimate the SNP impact on a protein structure, the script gives output of th
 
 ###### 2.1. Why perform a Buildmodel analysis?
 
-While performing a [BuildModel](http://foldxsuite.crg.eu/command/BuildModel) analysis, you will be able to insert different mutations into an already existing PDB[^PDBfile] file. By inserting these, the FoldX5(r) program will be able to calculate the difference in Gibbs free energy (∆G). The ∆G will determine the stability of the mutated protein. If ∆G > 0, the mutation is destabilizing, while a mutation causing a ∆G \< 0 the mutation will be stabilizing. Though, this does not tell you what the effect is on the proteins working mechanism itself, it will tell you more about the impact on the eventual protein structure in terms of its absolute value. The bigger the absolute value of ∆G, the bigger the overall impact on the structure.
+While performing a [BuildModel](http://foldxsuite.crg.eu/command/BuildModel) analysis, you will be able to insert different mutations into an already existing PDB file. By inserting these, the FoldX5® program will be able to calculate the difference in Gibbs free energy (∆G). The ∆G will determine the stability of the mutated protein. If ∆G > 0, the mutation is destabilizing, while a mutation causing a ∆G \< 0 the mutation will be stabilizing. Though, this does not tell you what the effect is on the proteins working mechanism itself, it will tell you more about the impact on the eventual protein structure in terms of its absolute value. The bigger the absolute value of ∆G, the bigger the overall impact on the structure.
 
 ###### 2.2. Why perform a Dihedral analysis?
 
@@ -192,7 +192,7 @@ After the full script has finished, you should find 4 new maps in your directory
 
 Within the BM. map you find maps named after the individual file(s) your analyses used. In each of these you should find: a Dif file as well as a Average file for each of your PDB files you tested. The Dif file gives you all the ∆G data for every run while the Average file gives you the mean value for each mutation from all the runs. 
 
-NOTE: Each mutation is named after the line (see in 4. Tutorial) it was on in your individual list (by default FoldX(r)).
+NOTE: Each mutation is named after the line (see in 4. Tutorial) it was on in your individual list (by default FoldX®).
 
 >Expected BM. output:
 >
@@ -222,7 +222,7 @@ In the last map, Molecules., you find every PDB file made and used by the script
 
 #### 6. Licenses
 
-This script is produced to function as a tool to run FoldX(R) in a user-friendly and high-throughput manner and was produced with an academic FoldX(R) license.
+This script is produced to function as a tool to run FoldX® in a user-friendly and high-throughput manner and was produced with an academic FoldX® license.
 
 #### 7. References
 

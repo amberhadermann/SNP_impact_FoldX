@@ -1,6 +1,6 @@
 The SNP\_impact\_FoldX.run script is a user-friendly command line set of commands that makes running [FoldX®](http://foldxsuite.crg.eu) protein energy stability analyses in a high throughput manner for estimating the impact of a SNP on a protein structure.[^1][^2]
 
-Throughout this guide we will guide you through every step needed to make sure your analyses run smoothly. ==Make sure to read everything before you start.==
+Throughout this guide we will guide you through every step needed to make sure your analyses run smoothly. **Make sure to read everything before you start**.
 
 #### 1. Installation
 
@@ -34,7 +34,7 @@ By performing a [Positionscan](http://foldxsuite.crg.eu/command/PositionScan), t
 
 #### 3. Preparations
 
-Before you can start the analysis, we need to set a few parameters and provide input files. Therefore, ==**a good preparation is key to the success of your analysis**==.
+Before you can start the analysis, we need to set a few parameters and provide input files. Therefore, **a good preparation is key to the success of your analysis**.
 
 ###### 3.1. PDB file
 
@@ -191,7 +191,7 @@ After the full script has finished, you should find 4 new maps in your directory
 
 Within the BM. map you find maps named after the individual file(s) your analyses used. In each of these you should find: a Dif file as well as a Average file for each of your PDB files you tested. The Dif file gives you all the ∆G data for every run while the Average file gives you the mean value for each mutation from all the runs. 
 
-NOTE: Each mutation is named after the line (see question 4 in 4. Tutorial) it was on in your individual list (by default FoldX(r)).
+NOTE: Each mutation is named after the line (see in 4. Tutorial) it was on in your individual list (by default FoldX(r)).
 
 >Expected BM. output:
 >
@@ -199,7 +199,7 @@ NOTE: Each mutation is named after the line (see question 4 in 4. Tutorial) it w
 
 Within the DH. map you find maps named after the individual file(s) your BuildModel analyses used. In each of these you should find: DH_ files for each PDB file and each mutation inserted by your BuildModel analyses as well as the same information of the optimized files (see 2.2.). These files consist of a full list of dihedral angles of each amino acid present in your PDB file. To analyze this data, you find the differences between your repaired PDB file output and the output of the mutation. Make sure to only compare optimized files with optimized mutant files and non-optimized with non-optimized files.
 
-NOTE: Each DH file is named after the mutation line (see question 4 in 4. Tutorial) it was on in your individual list.
+NOTE: Each DH file is named after the mutation line (see 4. Tutorial) it was on in your individual list.
 
 >Expected DH. output:
 >
@@ -223,8 +223,8 @@ In the last map, Molecules., you find every PDB file made and used by the script
 
 This script is produced to function as a tool to run FoldX(R) in a user-friendly and high-throughput manner and was produced with an academic FoldX(R) license.
 
+#### 7. References
+
 [^1]: Schymkowitz, J. W. et al. Prediction of water and metal binding sites and their affinities by using the Fold-X force field. Proc Natl Acad Sci U S A 102, 10147-10152, doi:10.1073/pnas.0501980102 (2005).
 
 [^2]: Van Durme, J. et al. A graphical interface for the FoldX forcefield. Bioinformatics 27, 1711-1712, doi:10.1093/bioinformatics/btr254 (2011).
-
-[^PDBfile]: **_PDB file_** = a file mainly provided by the [protein data base](https://www.rcsb.org) that gives a visual 3D representation of a protein.

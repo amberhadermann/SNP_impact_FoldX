@@ -166,7 +166,6 @@ You answer this question with `1`.
 You answer the question with `2`, since there are now two lines.
 
 
-
 The next question (will only appear when you want to run a BuildModel analysis): `Do you want to perform a Dihedral analysis? (Yes/No)`
 
 Your answer can either be 'Yes' or 'No' (case sensitive).
@@ -180,6 +179,8 @@ The last and final question will appear if you chose to run a position scan: `wh
 Here you answer with 1 or more mutations formatted like discussed in 3.5.. Make sure to put a space between mutations if you want to scan multiple locations.
 
 Then the script is expected to run for about 2h for the minimum amount of runs (2), mutations (1) and locations (1) on a fairly complex protein.
+
+**To grasp how to fully prepare and run the script, you can follow the example tutorial in the EXAMPLE.md file.**
 
 #### 5. Output
 

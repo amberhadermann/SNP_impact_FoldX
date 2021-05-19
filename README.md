@@ -1,4 +1,4 @@
-The SNP\_impact\_FoldX.run script is a user-friendly command line set of commands that makes running [FoldX®](http://foldxsuite.crg.eu) protein energy stability analyses in a high throughput manner for estimating the impact of a SNP on a protein structure.[^1][^2]
+The SNP\_impact\_FoldX.run script is a user-friendly command line set of commands that makes running [FoldX®](http://foldxsuite.crg.eu) protein energy stability analyses in a high throughput manner for estimating the impact of a SNP on a protein structure.[1][2]
 
 Throughout this guide we will guide you through every step needed to make sure your analyses run smoothly. **Make sure to read everything before you start**.
 
@@ -225,6 +225,6 @@ This script is produced to function as a tool to run FoldX(R) in a user-friendly
 
 #### 7. References
 
-[^1]: Schymkowitz, J. W. et al. Prediction of water and metal binding sites and their affinities by using the Fold-X force field. Proc Natl Acad Sci U S A 102, 10147-10152, doi:10.1073/pnas.0501980102 (2005).
+[1]: Schymkowitz, J. W. et al. Prediction of water and metal binding sites and their affinities by using the Fold-X force field. Proc Natl Acad Sci U S A 102, 10147-10152, doi:10.1073/pnas.0501980102 (2005).
 
-[^2]: Van Durme, J. et al. A graphical interface for the FoldX forcefield. Bioinformatics 27, 1711-1712, doi:10.1093/bioinformatics/btr254 (2011).
+[2]: Van Durme, J. et al. A graphical interface for the FoldX forcefield. Bioinformatics 27, 1711-1712, doi:10.1093/bioinformatics/btr254 (2011).

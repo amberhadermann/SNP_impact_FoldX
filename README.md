@@ -139,8 +139,8 @@ Your answer can either be 'Yes' or 'No' - attention case sensitive!.
 If you answered 'Yes' on the previous question, this will be your next question: `How many BuildModel runs do you want? (number>1)`
 
 Next we need to provide the amount of the analysis to be repeated. The higher your number, the more accurate your eventual average ∆G will be. **Make sure to use a number higher than 1.** However, keep in mind that every run added will take time and memory space, since FoldX will create a lot of small files before it will do its calculations. For every mutation you add in your individual list, the amount you provide here will be repeated. For example an individual file of 50 lines to be run 5 times, will take ±1h to run. 
-**It is important to make sure your machine has the required memory capacity to run the amount of analyses** 
 
+**It is important to make sure your machine has the required memory capacity to run the amount of analyses** 
 => For example: If you are using a fairly complex protein of e.g. 1.7MB and you want to insert 50 mutations/lines and run them 5 times you'll need about 1GB (1.7MB\*50\*5*2 + output files). 
 
 NOTE: This script will help you sort out the temporary files from the files you'll need for the analysis by removing the temporary files. So, most of memory will become operable again after the analysis is done.

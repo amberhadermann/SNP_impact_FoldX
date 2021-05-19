@@ -6,7 +6,9 @@ Throughout this guide we will guide you through every step needed to make sure y
 
 This analysis requires a fully operating [FoldX5®](http://foldxsuite.crg.eu/products#foldx) script, installation and download instructions are available on their [website](http://foldxsuite.crg.eu). To make sure your FoldX(R) script works, run the following command line: `PATH/TO/YOUR/FOLDX/SCRIPT`
 
->Once the script initiates, you should see this output: [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-11-om-20.18.46.png)](https://www.linkpicture.com/view.php?img=LPic609acab117635650192931)
+>Once the script initiates, you should see this output:
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-11-om-20.18.46.png)](https://www.linkpicture.com/view.php?img=LPic609acab117635650192931)
 
 To make sure the SNP\_impact\_FoldX.run script works within your terminal, you run the following command in your BASH or ZSH terminal shell: 
 
@@ -154,12 +156,14 @@ NOTE: that you should provide the lines, since when you choose to insert 2 mutat
 1. For this individual list:
 
 [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.36.47.png)](https://www.linkpicture.com/view.php?img=LPic609b93afb6b0c975077445)
-You answer this question with 1.
+
+You answer this question with `1`.
 
 2. On the otherhand, when you have this individual list:
 
 [![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-12-om-10.39.55.png)](https://www.linkpicture.com/view.php?img=LPic609b946ba0c83531588920)
-You answer the question with 2, since there are now two lines.
+
+You answer the question with `2`, since there are now two lines.
 
 
 
@@ -182,38 +186,45 @@ Then the script is expected to run for about 2h for the minimum amount of runs (
 After the full script has finished, you should find 4 new maps in your directory (if you ran every analysis): **BM.** (=BuildModel output), **DH.** (=Dihedral output), **PS.** (=PositionScan output) and **Molecules.** (= contains all PDB files used and made throughout the analyses). However, if there was output from another run present in your directory, files called **previous_run** will contain the old date to ensure no data gets lost throughout the analysis.
 
 >Expected output files:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.22.23.png)](https://www.linkpicture.com/view.php?img=LPic60a5113291f0f1573643868)
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.22.23.png)](https://www.linkpicture.com/view.php?img=LPic60a5113291f0f1573643868)
 
 Within the BM. map you find maps named after the individual file(s) your analyses used. In each of these you should find: a Dif file as well as a Average file for each of your PDB files you tested. The Dif file gives you all the ∆G data for every run while the Average file gives you the mean value for each mutation from all the runs. 
 
 NOTE: Each mutation is named after the line (see question 4 in 4. Tutorial) it was on in your individual list (by default FoldX(r)).
 
 >Expected BM. output:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.25.49.png)](https://www.linkpicture.com/view.php?img=LPic60a511eeede072138364825)
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.25.49.png)](https://www.linkpicture.com/view.php?img=LPic60a511eeede072138364825)
 
 Within the DH. map you find maps named after the individual file(s) your BuildModel analyses used. In each of these you should find: DH_ files for each PDB file and each mutation inserted by your BuildModel analyses as well as the same information of the optimized files (see 2.2.). These files consist of a full list of dihedral angles of each amino acid present in your PDB file. To analyze this data, you find the differences between your repaired PDB file output and the output of the mutation. Make sure to only compare optimized files with optimized mutant files and non-optimized with non-optimized files.
 
 NOTE: Each DH file is named after the mutation line (see question 4 in 4. Tutorial) it was on in your individual list.
 
 >Expected DH. output:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.28.17.png)](https://www.linkpicture.com/view.php?img=LPic60a5128736b301803020340)
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.28.17.png)](https://www.linkpicture.com/view.php?img=LPic60a5128736b301803020340)
 
 Within the PS. map you find maps named after the locations you tested. In those you should find a **PS_** file for every PDB file tested. In these files you find the mutation that was tested (so every amino acid you tested with the code letter; a for every amino acid) with in the next column there ∆G. 
 
 NOTE: some files will not present His (H) as a mutant but "e" or "o". These are His in different protonation states. More information about this can be found [here]( http://foldxsuite.crg.eu/allowed-residues).
 
 >Expected PS. output:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.30.37.png)](https://www.linkpicture.com/view.php?img=LPic60a51311636f51924747962)
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.30.37.png)](https://www.linkpicture.com/view.php?img=LPic60a51311636f51924747962)
 
 In the last map, Molecules., you find every PDB file made and used by the script. These files can be used for visualization purposes or in further analyses.
 
 >Expected molecules. output:
-[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.34.09.png)](https://www.linkpicture.com/view.php?img=LPic60a513e38d0db1413115394)
+>
+>[![image](https://www.linkpicture.com/q/Schermafbeelding-2021-05-19-om-15.34.09.png)](https://www.linkpicture.com/view.php?img=LPic60a513e38d0db1413115394)
 
 #### 6. Licenses
 
 This script is produced to function as a tool to run FoldX(R) in a user-friendly and high-throughput manner and was produced with an academic FoldX(R) license.
 
 [^1]: Schymkowitz, J. W. et al. Prediction of water and metal binding sites and their affinities by using the Fold-X force field. Proc Natl Acad Sci U S A 102, 10147-10152, doi:10.1073/pnas.0501980102 (2005).
+
 [^2]: Van Durme, J. et al. A graphical interface for the FoldX forcefield. Bioinformatics 27, 1711-1712, doi:10.1093/bioinformatics/btr254 (2011).
+
 [^PDBfile]: **_PDB file_** = a file mainly provided by the [protein data base](https://www.rcsb.org) that gives a visual 3D representation of a protein.
